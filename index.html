@@ -16,7 +16,10 @@
 
   <body>
     <header>
+      <!-- -----------------------------header-------------------------- -->
       <nav class="container">
+
+<!-- -----------------------------nav-left-side-------------------------- -->
         <div class="nav-left-side">
           <svg
             width="17"
@@ -36,6 +39,8 @@
 
           <a href="/">Javascript Flash Course</a>
         </div>
+
+<!-- -----------------------------open-nav-menu-------------------------- -->
 
         <button id="open-nav-menu">
           <svg
@@ -65,6 +70,9 @@
             />
           </svg>
         </button>
+
+
+<!-- -----------------------------wrapper-------------------------- -->
 
         <div class="wrapper">
           <ul>
@@ -129,8 +137,12 @@
       </nav>
     </header>
 
+<!-- -----------------------------main-------------------------- -->
+
     <main>
       <section id="home" class="container greeting-section">
+
+<!-- -----------------------------left-side-------------------------- -->
         <div class="left-side">
           <h1 id="greeting">Good Afternoon!</h1>
           <p id="weather">Retrieving weather information...</p>
@@ -146,6 +158,9 @@
             <label for="fahr">Fahr</label>
           </div>
         </div>
+
+
+<!-- -----------------------------time-------------------------- -->
 
         <div class="right-side">
           <p>Local time:</p>
@@ -169,7 +184,38 @@
       </section>
 
       <section id="gallery" class="gallery-section">
-        <img src="" alt="" />
+        <div class="container">
+          <div class="mySlides">
+              <img src="./assets/gallery/image1.jpg" >
+          </div>
+          <div class="mySlides">
+              <img src="./assets/gallery/image2.jpg" >
+          </div>
+          <div class="mySlides">
+              <img src="./assets/gallery/image3.jpg" >
+          </div>
+  
+          <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+  
+          <div class="caption-container">
+              <p id="caption"></p>
+          </div>
+  
+          <div class="row">
+              <div class="column">
+                  <img class="demo cursor" src="./assets/gallery/image1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="./assets/gallery/image2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+              </div>
+              <div class="column">
+  
+                  <img class="demo cursor" src="./assets/gallery/image3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+              </div>
+          </div>
+      </div>
+  
 
         <div class="thumbnails">
           
@@ -178,30 +224,66 @@
 
       <section id="products" class="container products-section">
         <div class="products-filter">
-          <input type="radio" checked="true" id="all" name="products" />
+          <input type="radio" checked id="all" name="products" />
           <label for="all">
             All
-            <span class="product-amount">3</span>
+            <span class="product-amount">6</span>
           </label>
           <input type="radio" id="paid" name="products" />
           <label for="paid">
             Paid
-            <span class="product-amount">2</span>
+            <span class="product-amount">4</span>
           </label>
           <input type="radio" id="free" name="products" />
           <label for="free">
             Free
-            <span class="product-amount">1</span>
+            <span class="product-amount">3</span>
           </label>
-
+        
           <span class="glider"></span>
         </div>
-
+      
         <div class="products-area">
-          
-       </div>
-
+          <!-- Paid Products -->
+          <div class="product-item paid">
+            <img src="./assets/products/img1.png" alt="Paid Product 1">
+          </div>
+          <div class="product-item paid">
+            <img src="./assets/products/img2.png" alt="Paid Product 2">
+          </div>
+          <div class="product-item paid">
+            <img src="./assets/products/img3.png" alt="Paid Product 3">
+          </div>
+          <div class="product-item paid">
+            <img src="./assets/products/img4.png" alt="Paid Product 4">
+          </div>
+          <div class="product-item paid">
+            <img src="./assets/products/img5.png" alt="Paid Product 4">
+          </div>
+          <div class="product-item paid">
+            <img src="./assets/products/img6.png" alt="Paid Product 4">
+          </div>
+      
+          <!-- Free Products -->
+          <div class="product-item free">
+            <img src="./assets/products/img1.png" alt="Free Product 1">
+          </div>
+          <div class="product-item free">
+            <img src="./assets/products/img2.png" alt="Free Product 2">
+          </div>
+          <div class="product-item free">
+            <img src="./assets/products/img3.png" alt="Free Product 2">
+          </div>
+          <!-- <div class="product-item free">
+            <img src="./assets/products/img4.png" alt="Free Product 2">
+          </div> -->
+        </div>
       </section>
+      
+      
+      
+      
+      
 
       <section id="faqs" class="container faqs-section">
         <h3>Frequently Asked Questions</h3>
@@ -241,9 +323,11 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer id="footer">
+      &copy; <span id="year"></span> ISTEDUCATION
+    </footer>
 
-    <script src="main.js"></script>
+    <script src="./script.js"></script>
 
   </body>
 </html>
